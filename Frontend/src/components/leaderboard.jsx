@@ -12,25 +12,25 @@ const Leaderboard = () => {
   return (
     <>
       <div className="leaderboard_body">
-        <div class="h1_text">LeaderBoard</div>
+        <div className="h1_text">LeaderBoard</div>
         <div className="participants_l_body">
           <div className="participants_l">
             Participants: {current}/{participants}
           </div>
         </div>
         <div className="container aboutbody">
-          <div class="head_board">
+          <div className="head_board">
             <div className="board">
-              <div class=" boxes el-1 ">Name</div>
+              <div className=" boxes el-1 ">Name</div>
             </div>
             <div className="board">
-              <div class=" boxes el-2 ">Correct</div>
+              <div className=" boxes el-2 ">Correct</div>
             </div>
             <div className="board">
-              <div class=" boxes el-3 ">Wrong</div>
+              <div className=" boxes el-3 ">Wrong</div>
             </div>
             <div className="board">
-              <div class=" boxes el-4 ">%Achieved</div>
+              <div className=" boxes el-4 ">%Achieved</div>
             </div>
           </div>
           {candidate.map((each, index) => {

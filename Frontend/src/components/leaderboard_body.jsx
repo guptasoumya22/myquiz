@@ -6,16 +6,16 @@ function Leaderboard_body(props) {
   return (
     <div class="details_L">
       <div className="board">
-        <div class=" boxes el-1 ">{data.name}</div>
+        <div className=" boxes el-1 ">{data.name}</div>
       </div>
       <div className="board">
-        <div class=" boxes el-2 ">{data.correct}</div>
+        <div className=" boxes el-2 ">{data.correct}</div>
       </div>
       <div className="board">
-        <div class=" boxes el-3 ">{data.wrong}</div>
+        <div className=" boxes el-3 ">{data.wrong}</div>
       </div>
       <div className="board">
-        <div class=" boxes el-4 ">{data.accuracy}</div>
+        <div className=" boxes el-4 ">{data.accuracy}</div>
       </div>
     </div>
   );

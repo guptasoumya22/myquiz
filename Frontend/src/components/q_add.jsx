@@ -135,7 +135,7 @@ function Q_add() {
             body: JSON.stringify(data),
           }
         );
-
+      
         // Handle the response data as needed
         const json = await response.json();
         const quiz_id = json.quiz_id;

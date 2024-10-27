@@ -5,7 +5,7 @@ const { body, validationResult } = require("express-validator");
 const bcrypt = require("bcryptjs");
 var jwt = require("jsonwebtoken");
 const fetchUser = require("../middleware/fetchUserr");
-const JWT_SECRET = "Amanisagoodbo$y";
+const JWT_SECRETKEY = process.env.JWT_SECRET;
 
 // ROUTE 1: Create a User using:POST "/api/auth/createuser". No login required
 router.post(
@@ -44,7 +44,7 @@ router.post(
       const data = {
         id: user.id,
       };
-      const authtoken = jwt.sign(data, JWT_SECRET);
+      const authtoken = jwt.sign(data, JWT_SECRETKEY);
       success = true;
       res.json({ success, authtoken });
     } catch (error) {
@@ -88,7 +88,7 @@ router.post(
       const data = {
         id: user.id,
       };
-      const authtoken = jwt.sign(data, JWT_SECRET);
+      const authtoken = jwt.sign(data, JWT_SECRETKEY);
       success = true;
       res.json({ success, authtoken });
     } catch (error) {

@@ -40,7 +40,7 @@ const Home = () => {
         <div className="col-lg-6 col-md-6 col-sm-12 card-center">
           <div className="card card2">
             <div className="card2_logo ">
-              <i class="fa-solid fa-circle-plus fa-5x card2_icon"></i>
+              <i className="fa-solid fa-circle-plus fa-5x card2_icon"></i>
             </div>
             <div className="card2footer">
               <button className="card_button" onClick={checkAuthHost}>

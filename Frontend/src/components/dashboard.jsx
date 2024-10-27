@@ -38,18 +38,18 @@ const Dashboard = () => {
         {selectedOption === "join" ? (
           //JOIN
           <div className="container aboutbody">
-            <div class="head_board">
+            <div className="head_board">
               <div className="board">
-                <div class=" boxes el-1 ">Quiz Name</div>
+                <div className=" boxes el-1 ">Quiz Name</div>
               </div>
               <div className="board">
-                <div class=" boxes el-2 ">Total Question</div>
+                <div className=" boxes el-2 ">Total Question</div>
               </div>
               <div className="board">
-                <div class=" boxes el-3 ">Correct</div>
+                <div className=" boxes el-3 ">Correct</div>
               </div>
               <div className="board">
-                <div class=" boxes el-4 ">%Achieved</div>
+                <div className=" boxes el-4 ">%Achieved</div>
               </div>
             </div>
             {join.map((each, index) => {
@@ -59,18 +59,18 @@ const Dashboard = () => {
         ) : (
           //HOST
           <div className="container aboutbody">
-            <div class="head_board">
+            <div className="head_board">
               <div className="board">
-                <div class=" boxes el-1 ">Quiz Name</div>
+                <div className=" boxes el-1 ">Quiz Name</div>
               </div>
               <div className="board">
-                <div class=" boxes el-2 ">Total Question</div>
+                <div className=" boxes el-2 ">Total Question</div>
               </div>
               <div className="board">
-                <div class=" boxes el-3 ">Duration</div>
+                <div className=" boxes el-3 ">Duration</div>
               </div>
               <div className="board">
-                <div class=" boxes el-4 ">Quiz_id</div>
+                <div className=" boxes el-4 ">Quiz_id</div>
               </div>
             </div>
             <div>

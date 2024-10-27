@@ -90,3 +90,93 @@ function Share_code() {
 }
 
 export default Share_code;
+// import React from "react";
+// import "../components_style/share_code.css";
+// import { useLocation, useNavigate } from "react-router-dom";
+// import Swal from "sweetalert2";
+
+// function Share_code() {
+//   const location = useLocation();
+//   const data = location.state.data;
+
+//   const code = data.quiz_id;
+//   const duration = data.duration;
+//   const name = data.name;
+//   const qNo = data.qNo;
+
+//   // Navigate
+//   const navigate = useNavigate();
+  
+//   const onContinue = async () => {
+//     navigate("/");
+//   };
+
+//   // Stop
+//   const onStop = async () => {
+//     try {
+//       const response = await fetch("http://localhost:5000/api/unpublish/expire", {
+//         method: "POST",
+//         headers: {
+//           "Content-Type": "application/json",
+//           "auth-token": localStorage.getItem("token"),
+//         },
+//         body: JSON.stringify({ quiz_id: code }),
+//       });
+
+//       if (response.ok) {
+//         Swal.fire({
+//           position: "center",
+//           icon: "success",
+//           title: "Quiz stopped successfully",
+//           showConfirmButton: false,
+//           timer: 1500,
+//         });
+//         navigate("/");
+//       } else {
+//         const errorData = await response.json();
+//         Swal.fire({
+//           icon: "error",
+//           title: "Error",
+//           text: errorData.message || "Something went wrong",
+//         });
+//       }
+//     } catch (error) {
+//       console.error("Fetch error:", error);
+//       Swal.fire({
+//         icon: "error",
+//         title: "Error",
+//         text: "An unexpected error occurred",
+//       });
+//     }
+//   };
+
+//   return (
+//     <div className="container copy_box_body">
+//       <div className="box_body">
+//         <div className="share_details_body">
+//           <p className="share_quiz_name">Quiz Name - {name}</p>
+//           <p className="share_qNo">Total question: {qNo}</p>
+//         </div>
+//         <div className="code-box ">
+//           <p>Code - {code} </p>
+//         </div>
+//         <div className="share_info">
+//           <p>Share this code with participants</p>
+//         </div>
+//         <div className="duration_info">
+//           <p>Duration - {duration} minute</p>
+//         </div>
+//         <div className="btn_container">
+//           <button className="button-copy btn" onClick={onStop}>
+//             STOP <i className="fa-solid fa-hand"></i>
+//           </button>
+//           <button className="button-copy btn cont_btn" onClick={onContinue}>
+//             Continue <i className="fa-solid fa-circle-up fa-lg"></i>
+//           </button>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Share_code;

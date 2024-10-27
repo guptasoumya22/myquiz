@@ -176,7 +176,7 @@ const Host_quiz = () => {
           <div className="invalidInputs_injoin">
             {errParticipants ? (
               <p className="error_join error_name">
-                <i class="fa-solid fa-exclamation"></i> Enter between (1 - 100)
+                <i className="fa-solid fa-exclamation"></i> Enter between (1 - 100)
               </p>
             ) : (
               ""

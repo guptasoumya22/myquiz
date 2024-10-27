@@ -6,16 +6,16 @@ function Dashboard_join(props) {
   return (
     <div class="details">
       <div className="board">
-        <div class=" boxes el-1 ">{data.quiz_name}</div>
+        <div className=" boxes el-1 ">{data.quiz_name}</div>
       </div>
       <div className="board">
-        <div class=" boxes el-2 ">{data.no_q}</div>
+        <div className=" boxes el-2 ">{data.no_q}</div>
       </div>
       <div className="board">
-        <div class=" boxes el-3 ">{data.correct}</div>
+        <div className=" boxes el-3 ">{data.correct}</div>
       </div>
       <div className="board">
-        <div class=" boxes el-4 ">{data.accuracy}%</div>
+        <div className=" boxes el-4 ">{data.accuracy}%</div>
       </div>
     </div>
   );

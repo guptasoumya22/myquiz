@@ -24,7 +24,7 @@ function Dashboard_host(props) {
         }
       );
       const json = await response.json();
-      if (json.candidate.length === 0 || json == null || json == undefined) {
+      if (json.candidate.length === 0 || json === null || json === undefined) {
         Swal.fire({
           icon: "warning",
           title: "Dont have enough data",
@@ -46,16 +46,16 @@ function Dashboard_host(props) {
   return (
     <div class="details" onClick={onLeaderboard}>
       <div className="board">
-        <div class=" boxes el-1 ">{data.quiz_name}</div>
+        <div className=" boxes el-1 ">{data.quiz_name}</div>
       </div>
       <div className="board">
-        <div class=" boxes el-2 ">{data.no_of_question}</div>
+        <div className=" boxes el-2 ">{data.no_of_question}</div>
       </div>
       <div className="board">
-        <div class=" boxes el-3 ">{data.duration} min</div>
+        <div className=" boxes el-3 ">{data.duration} min</div>
       </div>
       <div className="board">
-        <div class=" boxes el-4 ">{data.quiz_id}</div>
+        <div className=" boxes el-4 ">{data.quiz_id}</div>
       </div>
     </div>
   );
